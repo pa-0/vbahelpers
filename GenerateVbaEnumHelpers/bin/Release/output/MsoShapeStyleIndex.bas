@@ -1,0 +1,145 @@
+Attribute VB_Name = "wMsoShapeStyleIndex"
+Function MsoShapeStyleIndexFromString(value As String) As MsoShapeStyleIndex
+    If IsNumeric(value) Then
+        MsoShapeStyleIndexFromString = CInt(value)
+        Exit Function
+    End If
+
+    Select Case value
+        Case "msoShapeStyleNotAPreset": MsoShapeStyleIndexFromString = msoShapeStyleNotAPreset
+        Case "msoShapeStylePreset1": MsoShapeStyleIndexFromString = msoShapeStylePreset1
+        Case "msoShapeStylePreset2": MsoShapeStyleIndexFromString = msoShapeStylePreset2
+        Case "msoShapeStylePreset3": MsoShapeStyleIndexFromString = msoShapeStylePreset3
+        Case "msoShapeStylePreset4": MsoShapeStyleIndexFromString = msoShapeStylePreset4
+        Case "msoShapeStylePreset5": MsoShapeStyleIndexFromString = msoShapeStylePreset5
+        Case "msoShapeStylePreset6": MsoShapeStyleIndexFromString = msoShapeStylePreset6
+        Case "msoShapeStylePreset7": MsoShapeStyleIndexFromString = msoShapeStylePreset7
+        Case "msoShapeStylePreset8": MsoShapeStyleIndexFromString = msoShapeStylePreset8
+        Case "msoShapeStylePreset9": MsoShapeStyleIndexFromString = msoShapeStylePreset9
+        Case "msoShapeStylePreset10": MsoShapeStyleIndexFromString = msoShapeStylePreset10
+        Case "msoShapeStylePreset11": MsoShapeStyleIndexFromString = msoShapeStylePreset11
+        Case "msoShapeStylePreset12": MsoShapeStyleIndexFromString = msoShapeStylePreset12
+        Case "msoShapeStylePreset13": MsoShapeStyleIndexFromString = msoShapeStylePreset13
+        Case "msoShapeStylePreset14": MsoShapeStyleIndexFromString = msoShapeStylePreset14
+        Case "msoShapeStylePreset15": MsoShapeStyleIndexFromString = msoShapeStylePreset15
+        Case "msoShapeStylePreset16": MsoShapeStyleIndexFromString = msoShapeStylePreset16
+        Case "msoShapeStylePreset17": MsoShapeStyleIndexFromString = msoShapeStylePreset17
+        Case "msoShapeStylePreset18": MsoShapeStyleIndexFromString = msoShapeStylePreset18
+        Case "msoShapeStylePreset19": MsoShapeStyleIndexFromString = msoShapeStylePreset19
+        Case "msoShapeStylePreset20": MsoShapeStyleIndexFromString = msoShapeStylePreset20
+        Case "msoShapeStylePreset21": MsoShapeStyleIndexFromString = msoShapeStylePreset21
+        Case "msoShapeStylePreset22": MsoShapeStyleIndexFromString = msoShapeStylePreset22
+        Case "msoShapeStylePreset23": MsoShapeStyleIndexFromString = msoShapeStylePreset23
+        Case "msoShapeStylePreset24": MsoShapeStyleIndexFromString = msoShapeStylePreset24
+        Case "msoShapeStylePreset25": MsoShapeStyleIndexFromString = msoShapeStylePreset25
+        Case "msoShapeStylePreset26": MsoShapeStyleIndexFromString = msoShapeStylePreset26
+        Case "msoShapeStylePreset27": MsoShapeStyleIndexFromString = msoShapeStylePreset27
+        Case "msoShapeStylePreset28": MsoShapeStyleIndexFromString = msoShapeStylePreset28
+        Case "msoShapeStylePreset29": MsoShapeStyleIndexFromString = msoShapeStylePreset29
+        Case "msoShapeStylePreset30": MsoShapeStyleIndexFromString = msoShapeStylePreset30
+        Case "msoShapeStylePreset31": MsoShapeStyleIndexFromString = msoShapeStylePreset31
+        Case "msoShapeStylePreset32": MsoShapeStyleIndexFromString = msoShapeStylePreset32
+        Case "msoShapeStylePreset33": MsoShapeStyleIndexFromString = msoShapeStylePreset33
+        Case "msoShapeStylePreset34": MsoShapeStyleIndexFromString = msoShapeStylePreset34
+        Case "msoShapeStylePreset35": MsoShapeStyleIndexFromString = msoShapeStylePreset35
+        Case "msoShapeStylePreset36": MsoShapeStyleIndexFromString = msoShapeStylePreset36
+        Case "msoShapeStylePreset37": MsoShapeStyleIndexFromString = msoShapeStylePreset37
+        Case "msoShapeStylePreset38": MsoShapeStyleIndexFromString = msoShapeStylePreset38
+        Case "msoShapeStylePreset39": MsoShapeStyleIndexFromString = msoShapeStylePreset39
+        Case "msoShapeStylePreset40": MsoShapeStyleIndexFromString = msoShapeStylePreset40
+        Case "msoShapeStylePreset41": MsoShapeStyleIndexFromString = msoShapeStylePreset41
+        Case "msoShapeStylePreset42": MsoShapeStyleIndexFromString = msoShapeStylePreset42
+        Case "msoLineStylePreset1": MsoShapeStyleIndexFromString = msoLineStylePreset1
+        Case "msoLineStylePreset2": MsoShapeStyleIndexFromString = msoLineStylePreset2
+        Case "msoLineStylePreset3": MsoShapeStyleIndexFromString = msoLineStylePreset3
+        Case "msoLineStylePreset4": MsoShapeStyleIndexFromString = msoLineStylePreset4
+        Case "msoLineStylePreset5": MsoShapeStyleIndexFromString = msoLineStylePreset5
+        Case "msoLineStylePreset6": MsoShapeStyleIndexFromString = msoLineStylePreset6
+        Case "msoLineStylePreset7": MsoShapeStyleIndexFromString = msoLineStylePreset7
+        Case "msoLineStylePreset8": MsoShapeStyleIndexFromString = msoLineStylePreset8
+        Case "msoLineStylePreset9": MsoShapeStyleIndexFromString = msoLineStylePreset9
+        Case "msoLineStylePreset10": MsoShapeStyleIndexFromString = msoLineStylePreset10
+        Case "msoLineStylePreset11": MsoShapeStyleIndexFromString = msoLineStylePreset11
+        Case "msoLineStylePreset12": MsoShapeStyleIndexFromString = msoLineStylePreset12
+        Case "msoLineStylePreset13": MsoShapeStyleIndexFromString = msoLineStylePreset13
+        Case "msoLineStylePreset14": MsoShapeStyleIndexFromString = msoLineStylePreset14
+        Case "msoLineStylePreset15": MsoShapeStyleIndexFromString = msoLineStylePreset15
+        Case "msoLineStylePreset16": MsoShapeStyleIndexFromString = msoLineStylePreset16
+        Case "msoLineStylePreset17": MsoShapeStyleIndexFromString = msoLineStylePreset17
+        Case "msoLineStylePreset18": MsoShapeStyleIndexFromString = msoLineStylePreset18
+        Case "msoLineStylePreset19": MsoShapeStyleIndexFromString = msoLineStylePreset19
+        Case "msoLineStylePreset20": MsoShapeStyleIndexFromString = msoLineStylePreset20
+        Case "msoLineStylePreset21": MsoShapeStyleIndexFromString = msoLineStylePreset21
+        Case "msoShapeStyleMixed": MsoShapeStyleIndexFromString = msoShapeStyleMixed
+    End Select
+End Function
+
+Function MsoShapeStyleIndexToString(value As MsoShapeStyleIndex) As String
+    Select Case value
+        Case msoShapeStyleNotAPreset: MsoShapeStyleIndexToString = "msoShapeStyleNotAPreset"
+        Case msoShapeStylePreset1: MsoShapeStyleIndexToString = "msoShapeStylePreset1"
+        Case msoShapeStylePreset2: MsoShapeStyleIndexToString = "msoShapeStylePreset2"
+        Case msoShapeStylePreset3: MsoShapeStyleIndexToString = "msoShapeStylePreset3"
+        Case msoShapeStylePreset4: MsoShapeStyleIndexToString = "msoShapeStylePreset4"
+        Case msoShapeStylePreset5: MsoShapeStyleIndexToString = "msoShapeStylePreset5"
+        Case msoShapeStylePreset6: MsoShapeStyleIndexToString = "msoShapeStylePreset6"
+        Case msoShapeStylePreset7: MsoShapeStyleIndexToString = "msoShapeStylePreset7"
+        Case msoShapeStylePreset8: MsoShapeStyleIndexToString = "msoShapeStylePreset8"
+        Case msoShapeStylePreset9: MsoShapeStyleIndexToString = "msoShapeStylePreset9"
+        Case msoShapeStylePreset10: MsoShapeStyleIndexToString = "msoShapeStylePreset10"
+        Case msoShapeStylePreset11: MsoShapeStyleIndexToString = "msoShapeStylePreset11"
+        Case msoShapeStylePreset12: MsoShapeStyleIndexToString = "msoShapeStylePreset12"
+        Case msoShapeStylePreset13: MsoShapeStyleIndexToString = "msoShapeStylePreset13"
+        Case msoShapeStylePreset14: MsoShapeStyleIndexToString = "msoShapeStylePreset14"
+        Case msoShapeStylePreset15: MsoShapeStyleIndexToString = "msoShapeStylePreset15"
+        Case msoShapeStylePreset16: MsoShapeStyleIndexToString = "msoShapeStylePreset16"
+        Case msoShapeStylePreset17: MsoShapeStyleIndexToString = "msoShapeStylePreset17"
+        Case msoShapeStylePreset18: MsoShapeStyleIndexToString = "msoShapeStylePreset18"
+        Case msoShapeStylePreset19: MsoShapeStyleIndexToString = "msoShapeStylePreset19"
+        Case msoShapeStylePreset20: MsoShapeStyleIndexToString = "msoShapeStylePreset20"
+        Case msoShapeStylePreset21: MsoShapeStyleIndexToString = "msoShapeStylePreset21"
+        Case msoShapeStylePreset22: MsoShapeStyleIndexToString = "msoShapeStylePreset22"
+        Case msoShapeStylePreset23: MsoShapeStyleIndexToString = "msoShapeStylePreset23"
+        Case msoShapeStylePreset24: MsoShapeStyleIndexToString = "msoShapeStylePreset24"
+        Case msoShapeStylePreset25: MsoShapeStyleIndexToString = "msoShapeStylePreset25"
+        Case msoShapeStylePreset26: MsoShapeStyleIndexToString = "msoShapeStylePreset26"
+        Case msoShapeStylePreset27: MsoShapeStyleIndexToString = "msoShapeStylePreset27"
+        Case msoShapeStylePreset28: MsoShapeStyleIndexToString = "msoShapeStylePreset28"
+        Case msoShapeStylePreset29: MsoShapeStyleIndexToString = "msoShapeStylePreset29"
+        Case msoShapeStylePreset30: MsoShapeStyleIndexToString = "msoShapeStylePreset30"
+        Case msoShapeStylePreset31: MsoShapeStyleIndexToString = "msoShapeStylePreset31"
+        Case msoShapeStylePreset32: MsoShapeStyleIndexToString = "msoShapeStylePreset32"
+        Case msoShapeStylePreset33: MsoShapeStyleIndexToString = "msoShapeStylePreset33"
+        Case msoShapeStylePreset34: MsoShapeStyleIndexToString = "msoShapeStylePreset34"
+        Case msoShapeStylePreset35: MsoShapeStyleIndexToString = "msoShapeStylePreset35"
+        Case msoShapeStylePreset36: MsoShapeStyleIndexToString = "msoShapeStylePreset36"
+        Case msoShapeStylePreset37: MsoShapeStyleIndexToString = "msoShapeStylePreset37"
+        Case msoShapeStylePreset38: MsoShapeStyleIndexToString = "msoShapeStylePreset38"
+        Case msoShapeStylePreset39: MsoShapeStyleIndexToString = "msoShapeStylePreset39"
+        Case msoShapeStylePreset40: MsoShapeStyleIndexToString = "msoShapeStylePreset40"
+        Case msoShapeStylePreset41: MsoShapeStyleIndexToString = "msoShapeStylePreset41"
+        Case msoShapeStylePreset42: MsoShapeStyleIndexToString = "msoShapeStylePreset42"
+        Case msoLineStylePreset1: MsoShapeStyleIndexToString = "msoLineStylePreset1"
+        Case msoLineStylePreset2: MsoShapeStyleIndexToString = "msoLineStylePreset2"
+        Case msoLineStylePreset3: MsoShapeStyleIndexToString = "msoLineStylePreset3"
+        Case msoLineStylePreset4: MsoShapeStyleIndexToString = "msoLineStylePreset4"
+        Case msoLineStylePreset5: MsoShapeStyleIndexToString = "msoLineStylePreset5"
+        Case msoLineStylePreset6: MsoShapeStyleIndexToString = "msoLineStylePreset6"
+        Case msoLineStylePreset7: MsoShapeStyleIndexToString = "msoLineStylePreset7"
+        Case msoLineStylePreset8: MsoShapeStyleIndexToString = "msoLineStylePreset8"
+        Case msoLineStylePreset9: MsoShapeStyleIndexToString = "msoLineStylePreset9"
+        Case msoLineStylePreset10: MsoShapeStyleIndexToString = "msoLineStylePreset10"
+        Case msoLineStylePreset11: MsoShapeStyleIndexToString = "msoLineStylePreset11"
+        Case msoLineStylePreset12: MsoShapeStyleIndexToString = "msoLineStylePreset12"
+        Case msoLineStylePreset13: MsoShapeStyleIndexToString = "msoLineStylePreset13"
+        Case msoLineStylePreset14: MsoShapeStyleIndexToString = "msoLineStylePreset14"
+        Case msoLineStylePreset15: MsoShapeStyleIndexToString = "msoLineStylePreset15"
+        Case msoLineStylePreset16: MsoShapeStyleIndexToString = "msoLineStylePreset16"
+        Case msoLineStylePreset17: MsoShapeStyleIndexToString = "msoLineStylePreset17"
+        Case msoLineStylePreset18: MsoShapeStyleIndexToString = "msoLineStylePreset18"
+        Case msoLineStylePreset19: MsoShapeStyleIndexToString = "msoLineStylePreset19"
+        Case msoLineStylePreset20: MsoShapeStyleIndexToString = "msoLineStylePreset20"
+        Case msoLineStylePreset21: MsoShapeStyleIndexToString = "msoLineStylePreset21"
+        Case msoShapeStyleMixed: MsoShapeStyleIndexToString = "msoShapeStyleMixed"
+    End Select
+End Function

@@ -1,0 +1,141 @@
+Attribute VB_Name = "wXlConstants"
+Function XlConstantsFromString(value As String) As XlConstants
+    If IsNumeric(value) Then
+        XlConstantsFromString = CInt(value)
+        Exit Function
+    End If
+
+    Select Case value
+        Case "xlAbove": XlConstantsFromString = xlAbove
+        Case "xlBoth": XlConstantsFromString = xlBoth
+        Case "xlFixedValue": XlConstantsFromString = xlFixedValue
+        Case "xlBelow": XlConstantsFromString = xlBelow
+        Case "xlGeneral": XlConstantsFromString = xlGeneral
+        Case "xlSquare": XlConstantsFromString = xlSquare
+        Case "xlSolid": XlConstantsFromString = xlSolid
+        Case "xlInside": XlConstantsFromString = xlInside
+        Case "xlMaximum": XlConstantsFromString = xlMaximum
+        Case "xlTransparent": XlConstantsFromString = xlTransparent
+        Case "xlPercent": XlConstantsFromString = xlPercent
+        Case "xlCorner": XlConstantsFromString = xlCorner
+        Case "xlPlusValues": XlConstantsFromString = xlPlusValues
+        Case "xlBar": XlConstantsFromString = xlBar
+        Case "xlShowValue": XlConstantsFromString = xlShowValue
+        Case "xlDiamond": XlConstantsFromString = xlDiamond
+        Case "xlSingle": XlConstantsFromString = xlSingle
+        Case "xlOpaque": XlConstantsFromString = xlOpaque
+        Case "xlScale": XlConstantsFromString = xlScale
+        Case "xlOutside": XlConstantsFromString = xlOutside
+        Case "xlColumn": XlConstantsFromString = xlColumn
+        Case "xlMinusValues": XlConstantsFromString = xlMinusValues
+        Case "xlTriangle": XlConstantsFromString = xlTriangle
+        Case "xlShowPercent": XlConstantsFromString = xlShowPercent
+        Case "xlMinimum": XlConstantsFromString = xlMinimum
+        Case "xlNextToAxis": XlConstantsFromString = xlNextToAxis
+        Case "xlShowLabel": XlConstantsFromString = xlShowLabel
+        Case "xlStError": XlConstantsFromString = xlStError
+        Case "xlCross": XlConstantsFromString = xlCross
+        Case "xlShowLabelAndPercent": XlConstantsFromString = xlShowLabelAndPercent
+        Case "xlFill": XlConstantsFromString = xlFill
+        Case "xlStar": XlConstantsFromString = xlStar
+        Case "xlCircle": XlConstantsFromString = xlCircle
+        Case "xlPlus": XlConstantsFromString = xlPlus
+        Case "xlChecker": XlConstantsFromString = xlChecker
+        Case "xlSemiGray75": XlConstantsFromString = xlSemiGray75
+        Case "xlLightHorizontal": XlConstantsFromString = xlLightHorizontal
+        Case "xlLightVertical": XlConstantsFromString = xlLightVertical
+        Case "xlLightDown": XlConstantsFromString = xlLightDown
+        Case "xlLightUp": XlConstantsFromString = xlLightUp
+        Case "xlGrid": XlConstantsFromString = xlGrid
+        Case "xlCrissCross": XlConstantsFromString = xlCrissCross
+        Case "xlGray16": XlConstantsFromString = xlGray16
+        Case "xlGray8": XlConstantsFromString = xlGray8
+        Case "xlTop": XlConstantsFromString = xlTop
+        Case "xlRight": XlConstantsFromString = xlRight
+        Case "xlNone": XlConstantsFromString = xlNone
+        Case "xlLow": XlConstantsFromString = xlLow
+        Case "xlLeft": XlConstantsFromString = xlLeft
+        Case "xlJustify": XlConstantsFromString = xlJustify
+        Case "xlHigh": XlConstantsFromString = xlHigh
+        Case "xlGray75": XlConstantsFromString = xlGray75
+        Case "xlGray50": XlConstantsFromString = xlGray50
+        Case "xlGray25": XlConstantsFromString = xlGray25
+        Case "xlDistributed": XlConstantsFromString = xlDistributed
+        Case "xlCustom": XlConstantsFromString = xlCustom
+        Case "xlCombination": XlConstantsFromString = xlCombination
+        Case "xlCenter": XlConstantsFromString = xlCenter
+        Case "xlBottom": XlConstantsFromString = xlBottom
+        Case "xlAutomatic": XlConstantsFromString = xlAutomatic
+        Case "xl3DSurface": XlConstantsFromString = xl3DSurface
+        Case "xl3DBar": XlConstantsFromString = xl3DBar
+        Case "xlDefaultAutoFormat": XlConstantsFromString = xlDefaultAutoFormat
+    End Select
+End Function
+
+Function XlConstantsToString(value As XlConstants) As String
+    Select Case value
+        Case xlAbove: XlConstantsToString = "xlAbove"
+        Case xlBoth: XlConstantsToString = "xlBoth"
+        Case xlFixedValue: XlConstantsToString = "xlFixedValue"
+        Case xlBelow: XlConstantsToString = "xlBelow"
+        Case xlGeneral: XlConstantsToString = "xlGeneral"
+        Case xlSquare: XlConstantsToString = "xlSquare"
+        Case xlSolid: XlConstantsToString = "xlSolid"
+        Case xlInside: XlConstantsToString = "xlInside"
+        Case xlMaximum: XlConstantsToString = "xlMaximum"
+        Case xlTransparent: XlConstantsToString = "xlTransparent"
+        Case xlPercent: XlConstantsToString = "xlPercent"
+        Case xlCorner: XlConstantsToString = "xlCorner"
+        Case xlPlusValues: XlConstantsToString = "xlPlusValues"
+        Case xlBar: XlConstantsToString = "xlBar"
+        Case xlShowValue: XlConstantsToString = "xlShowValue"
+        Case xlDiamond: XlConstantsToString = "xlDiamond"
+        Case xlSingle: XlConstantsToString = "xlSingle"
+        Case xlOpaque: XlConstantsToString = "xlOpaque"
+        Case xlScale: XlConstantsToString = "xlScale"
+        Case xlOutside: XlConstantsToString = "xlOutside"
+        Case xlColumn: XlConstantsToString = "xlColumn"
+        Case xlMinusValues: XlConstantsToString = "xlMinusValues"
+        Case xlTriangle: XlConstantsToString = "xlTriangle"
+        Case xlShowPercent: XlConstantsToString = "xlShowPercent"
+        Case xlMinimum: XlConstantsToString = "xlMinimum"
+        Case xlNextToAxis: XlConstantsToString = "xlNextToAxis"
+        Case xlShowLabel: XlConstantsToString = "xlShowLabel"
+        Case xlStError: XlConstantsToString = "xlStError"
+        Case xlCross: XlConstantsToString = "xlCross"
+        Case xlShowLabelAndPercent: XlConstantsToString = "xlShowLabelAndPercent"
+        Case xlFill: XlConstantsToString = "xlFill"
+        Case xlStar: XlConstantsToString = "xlStar"
+        Case xlCircle: XlConstantsToString = "xlCircle"
+        Case xlPlus: XlConstantsToString = "xlPlus"
+        Case xlChecker: XlConstantsToString = "xlChecker"
+        Case xlSemiGray75: XlConstantsToString = "xlSemiGray75"
+        Case xlLightHorizontal: XlConstantsToString = "xlLightHorizontal"
+        Case xlLightVertical: XlConstantsToString = "xlLightVertical"
+        Case xlLightDown: XlConstantsToString = "xlLightDown"
+        Case xlLightUp: XlConstantsToString = "xlLightUp"
+        Case xlGrid: XlConstantsToString = "xlGrid"
+        Case xlCrissCross: XlConstantsToString = "xlCrissCross"
+        Case xlGray16: XlConstantsToString = "xlGray16"
+        Case xlGray8: XlConstantsToString = "xlGray8"
+        Case xlTop: XlConstantsToString = "xlTop"
+        Case xlRight: XlConstantsToString = "xlRight"
+        Case xlNone: XlConstantsToString = "xlNone"
+        Case xlLow: XlConstantsToString = "xlLow"
+        Case xlLeft: XlConstantsToString = "xlLeft"
+        Case xlJustify: XlConstantsToString = "xlJustify"
+        Case xlHigh: XlConstantsToString = "xlHigh"
+        Case xlGray75: XlConstantsToString = "xlGray75"
+        Case xlGray50: XlConstantsToString = "xlGray50"
+        Case xlGray25: XlConstantsToString = "xlGray25"
+        Case xlDistributed: XlConstantsToString = "xlDistributed"
+        Case xlCustom: XlConstantsToString = "xlCustom"
+        Case xlCombination: XlConstantsToString = "xlCombination"
+        Case xlCenter: XlConstantsToString = "xlCenter"
+        Case xlBottom: XlConstantsToString = "xlBottom"
+        Case xlAutomatic: XlConstantsToString = "xlAutomatic"
+        Case xl3DSurface: XlConstantsToString = "xl3DSurface"
+        Case xl3DBar: XlConstantsToString = "xl3DBar"
+        Case xlDefaultAutoFormat: XlConstantsToString = "xlDefaultAutoFormat"
+    End Select
+End Function

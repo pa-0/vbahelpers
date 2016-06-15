@@ -1,0 +1,141 @@
+Attribute VB_Name = "wMsoPresetCamera"
+Function MsoPresetCameraFromString(value As String) As MsoPresetCamera
+    If IsNumeric(value) Then
+        MsoPresetCameraFromString = CInt(value)
+        Exit Function
+    End If
+
+    Select Case value
+        Case "msoCameraLegacyObliqueTopLeft": MsoPresetCameraFromString = msoCameraLegacyObliqueTopLeft
+        Case "msoCameraLegacyObliqueTop": MsoPresetCameraFromString = msoCameraLegacyObliqueTop
+        Case "msoCameraLegacyObliqueTopRight": MsoPresetCameraFromString = msoCameraLegacyObliqueTopRight
+        Case "msoCameraLegacyObliqueLeft": MsoPresetCameraFromString = msoCameraLegacyObliqueLeft
+        Case "msoCameraLegacyObliqueFront": MsoPresetCameraFromString = msoCameraLegacyObliqueFront
+        Case "msoCameraLegacyObliqueRight": MsoPresetCameraFromString = msoCameraLegacyObliqueRight
+        Case "msoCameraLegacyObliqueBottomLeft": MsoPresetCameraFromString = msoCameraLegacyObliqueBottomLeft
+        Case "msoCameraLegacyObliqueBottom": MsoPresetCameraFromString = msoCameraLegacyObliqueBottom
+        Case "msoCameraLegacyObliqueBottomRight": MsoPresetCameraFromString = msoCameraLegacyObliqueBottomRight
+        Case "msoCameraLegacyPerspectiveTopLeft": MsoPresetCameraFromString = msoCameraLegacyPerspectiveTopLeft
+        Case "msoCameraLegacyPerspectiveTop": MsoPresetCameraFromString = msoCameraLegacyPerspectiveTop
+        Case "msoCameraLegacyPerspectiveTopRight": MsoPresetCameraFromString = msoCameraLegacyPerspectiveTopRight
+        Case "msoCameraLegacyPerspectiveLeft": MsoPresetCameraFromString = msoCameraLegacyPerspectiveLeft
+        Case "msoCameraLegacyPerspectiveFront": MsoPresetCameraFromString = msoCameraLegacyPerspectiveFront
+        Case "msoCameraLegacyPerspectiveRight": MsoPresetCameraFromString = msoCameraLegacyPerspectiveRight
+        Case "msoCameraLegacyPerspectiveBottomLeft": MsoPresetCameraFromString = msoCameraLegacyPerspectiveBottomLeft
+        Case "msoCameraLegacyPerspectiveBottom": MsoPresetCameraFromString = msoCameraLegacyPerspectiveBottom
+        Case "msoCameraLegacyPerspectiveBottomRight": MsoPresetCameraFromString = msoCameraLegacyPerspectiveBottomRight
+        Case "msoCameraOrthographicFront": MsoPresetCameraFromString = msoCameraOrthographicFront
+        Case "msoCameraIsometricTopUp": MsoPresetCameraFromString = msoCameraIsometricTopUp
+        Case "msoCameraIsometricTopDown": MsoPresetCameraFromString = msoCameraIsometricTopDown
+        Case "msoCameraIsometricBottomUp": MsoPresetCameraFromString = msoCameraIsometricBottomUp
+        Case "msoCameraIsometricBottomDown": MsoPresetCameraFromString = msoCameraIsometricBottomDown
+        Case "msoCameraIsometricLeftUp": MsoPresetCameraFromString = msoCameraIsometricLeftUp
+        Case "msoCameraIsometricLeftDown": MsoPresetCameraFromString = msoCameraIsometricLeftDown
+        Case "msoCameraIsometricRightUp": MsoPresetCameraFromString = msoCameraIsometricRightUp
+        Case "msoCameraIsometricRightDown": MsoPresetCameraFromString = msoCameraIsometricRightDown
+        Case "msoCameraIsometricOffAxis1Left": MsoPresetCameraFromString = msoCameraIsometricOffAxis1Left
+        Case "msoCameraIsometricOffAxis1Right": MsoPresetCameraFromString = msoCameraIsometricOffAxis1Right
+        Case "msoCameraIsometricOffAxis1Top": MsoPresetCameraFromString = msoCameraIsometricOffAxis1Top
+        Case "msoCameraIsometricOffAxis2Left": MsoPresetCameraFromString = msoCameraIsometricOffAxis2Left
+        Case "msoCameraIsometricOffAxis2Right": MsoPresetCameraFromString = msoCameraIsometricOffAxis2Right
+        Case "msoCameraIsometricOffAxis2Top": MsoPresetCameraFromString = msoCameraIsometricOffAxis2Top
+        Case "msoCameraIsometricOffAxis3Left": MsoPresetCameraFromString = msoCameraIsometricOffAxis3Left
+        Case "msoCameraIsometricOffAxis3Right": MsoPresetCameraFromString = msoCameraIsometricOffAxis3Right
+        Case "msoCameraIsometricOffAxis3Bottom": MsoPresetCameraFromString = msoCameraIsometricOffAxis3Bottom
+        Case "msoCameraIsometricOffAxis4Left": MsoPresetCameraFromString = msoCameraIsometricOffAxis4Left
+        Case "msoCameraIsometricOffAxis4Right": MsoPresetCameraFromString = msoCameraIsometricOffAxis4Right
+        Case "msoCameraIsometricOffAxis4Bottom": MsoPresetCameraFromString = msoCameraIsometricOffAxis4Bottom
+        Case "msoCameraObliqueTopLeft": MsoPresetCameraFromString = msoCameraObliqueTopLeft
+        Case "msoCameraObliqueTop": MsoPresetCameraFromString = msoCameraObliqueTop
+        Case "msoCameraObliqueTopRight": MsoPresetCameraFromString = msoCameraObliqueTopRight
+        Case "msoCameraObliqueLeft": MsoPresetCameraFromString = msoCameraObliqueLeft
+        Case "msoCameraObliqueRight": MsoPresetCameraFromString = msoCameraObliqueRight
+        Case "msoCameraObliqueBottomLeft": MsoPresetCameraFromString = msoCameraObliqueBottomLeft
+        Case "msoCameraObliqueBottom": MsoPresetCameraFromString = msoCameraObliqueBottom
+        Case "msoCameraObliqueBottomRight": MsoPresetCameraFromString = msoCameraObliqueBottomRight
+        Case "msoCameraPerspectiveFront": MsoPresetCameraFromString = msoCameraPerspectiveFront
+        Case "msoCameraPerspectiveLeft": MsoPresetCameraFromString = msoCameraPerspectiveLeft
+        Case "msoCameraPerspectiveRight": MsoPresetCameraFromString = msoCameraPerspectiveRight
+        Case "msoCameraPerspectiveAbove": MsoPresetCameraFromString = msoCameraPerspectiveAbove
+        Case "msoCameraPerspectiveBelow": MsoPresetCameraFromString = msoCameraPerspectiveBelow
+        Case "msoCameraPerspectiveAboveLeftFacing": MsoPresetCameraFromString = msoCameraPerspectiveAboveLeftFacing
+        Case "msoCameraPerspectiveAboveRightFacing": MsoPresetCameraFromString = msoCameraPerspectiveAboveRightFacing
+        Case "msoCameraPerspectiveContrastingLeftFacing": MsoPresetCameraFromString = msoCameraPerspectiveContrastingLeftFacing
+        Case "msoCameraPerspectiveContrastingRightFacing": MsoPresetCameraFromString = msoCameraPerspectiveContrastingRightFacing
+        Case "msoCameraPerspectiveHeroicLeftFacing": MsoPresetCameraFromString = msoCameraPerspectiveHeroicLeftFacing
+        Case "msoCameraPerspectiveHeroicRightFacing": MsoPresetCameraFromString = msoCameraPerspectiveHeroicRightFacing
+        Case "msoCameraPerspectiveHeroicExtremeLeftFacing": MsoPresetCameraFromString = msoCameraPerspectiveHeroicExtremeLeftFacing
+        Case "msoCameraPerspectiveHeroicExtremeRightFacing": MsoPresetCameraFromString = msoCameraPerspectiveHeroicExtremeRightFacing
+        Case "msoCameraPerspectiveRelaxed": MsoPresetCameraFromString = msoCameraPerspectiveRelaxed
+        Case "msoCameraPerspectiveRelaxedModerately": MsoPresetCameraFromString = msoCameraPerspectiveRelaxedModerately
+        Case "msoPresetCameraMixed": MsoPresetCameraFromString = msoPresetCameraMixed
+    End Select
+End Function
+
+Function MsoPresetCameraToString(value As MsoPresetCamera) As String
+    Select Case value
+        Case msoCameraLegacyObliqueTopLeft: MsoPresetCameraToString = "msoCameraLegacyObliqueTopLeft"
+        Case msoCameraLegacyObliqueTop: MsoPresetCameraToString = "msoCameraLegacyObliqueTop"
+        Case msoCameraLegacyObliqueTopRight: MsoPresetCameraToString = "msoCameraLegacyObliqueTopRight"
+        Case msoCameraLegacyObliqueLeft: MsoPresetCameraToString = "msoCameraLegacyObliqueLeft"
+        Case msoCameraLegacyObliqueFront: MsoPresetCameraToString = "msoCameraLegacyObliqueFront"
+        Case msoCameraLegacyObliqueRight: MsoPresetCameraToString = "msoCameraLegacyObliqueRight"
+        Case msoCameraLegacyObliqueBottomLeft: MsoPresetCameraToString = "msoCameraLegacyObliqueBottomLeft"
+        Case msoCameraLegacyObliqueBottom: MsoPresetCameraToString = "msoCameraLegacyObliqueBottom"
+        Case msoCameraLegacyObliqueBottomRight: MsoPresetCameraToString = "msoCameraLegacyObliqueBottomRight"
+        Case msoCameraLegacyPerspectiveTopLeft: MsoPresetCameraToString = "msoCameraLegacyPerspectiveTopLeft"
+        Case msoCameraLegacyPerspectiveTop: MsoPresetCameraToString = "msoCameraLegacyPerspectiveTop"
+        Case msoCameraLegacyPerspectiveTopRight: MsoPresetCameraToString = "msoCameraLegacyPerspectiveTopRight"
+        Case msoCameraLegacyPerspectiveLeft: MsoPresetCameraToString = "msoCameraLegacyPerspectiveLeft"
+        Case msoCameraLegacyPerspectiveFront: MsoPresetCameraToString = "msoCameraLegacyPerspectiveFront"
+        Case msoCameraLegacyPerspectiveRight: MsoPresetCameraToString = "msoCameraLegacyPerspectiveRight"
+        Case msoCameraLegacyPerspectiveBottomLeft: MsoPresetCameraToString = "msoCameraLegacyPerspectiveBottomLeft"
+        Case msoCameraLegacyPerspectiveBottom: MsoPresetCameraToString = "msoCameraLegacyPerspectiveBottom"
+        Case msoCameraLegacyPerspectiveBottomRight: MsoPresetCameraToString = "msoCameraLegacyPerspectiveBottomRight"
+        Case msoCameraOrthographicFront: MsoPresetCameraToString = "msoCameraOrthographicFront"
+        Case msoCameraIsometricTopUp: MsoPresetCameraToString = "msoCameraIsometricTopUp"
+        Case msoCameraIsometricTopDown: MsoPresetCameraToString = "msoCameraIsometricTopDown"
+        Case msoCameraIsometricBottomUp: MsoPresetCameraToString = "msoCameraIsometricBottomUp"
+        Case msoCameraIsometricBottomDown: MsoPresetCameraToString = "msoCameraIsometricBottomDown"
+        Case msoCameraIsometricLeftUp: MsoPresetCameraToString = "msoCameraIsometricLeftUp"
+        Case msoCameraIsometricLeftDown: MsoPresetCameraToString = "msoCameraIsometricLeftDown"
+        Case msoCameraIsometricRightUp: MsoPresetCameraToString = "msoCameraIsometricRightUp"
+        Case msoCameraIsometricRightDown: MsoPresetCameraToString = "msoCameraIsometricRightDown"
+        Case msoCameraIsometricOffAxis1Left: MsoPresetCameraToString = "msoCameraIsometricOffAxis1Left"
+        Case msoCameraIsometricOffAxis1Right: MsoPresetCameraToString = "msoCameraIsometricOffAxis1Right"
+        Case msoCameraIsometricOffAxis1Top: MsoPresetCameraToString = "msoCameraIsometricOffAxis1Top"
+        Case msoCameraIsometricOffAxis2Left: MsoPresetCameraToString = "msoCameraIsometricOffAxis2Left"
+        Case msoCameraIsometricOffAxis2Right: MsoPresetCameraToString = "msoCameraIsometricOffAxis2Right"
+        Case msoCameraIsometricOffAxis2Top: MsoPresetCameraToString = "msoCameraIsometricOffAxis2Top"
+        Case msoCameraIsometricOffAxis3Left: MsoPresetCameraToString = "msoCameraIsometricOffAxis3Left"
+        Case msoCameraIsometricOffAxis3Right: MsoPresetCameraToString = "msoCameraIsometricOffAxis3Right"
+        Case msoCameraIsometricOffAxis3Bottom: MsoPresetCameraToString = "msoCameraIsometricOffAxis3Bottom"
+        Case msoCameraIsometricOffAxis4Left: MsoPresetCameraToString = "msoCameraIsometricOffAxis4Left"
+        Case msoCameraIsometricOffAxis4Right: MsoPresetCameraToString = "msoCameraIsometricOffAxis4Right"
+        Case msoCameraIsometricOffAxis4Bottom: MsoPresetCameraToString = "msoCameraIsometricOffAxis4Bottom"
+        Case msoCameraObliqueTopLeft: MsoPresetCameraToString = "msoCameraObliqueTopLeft"
+        Case msoCameraObliqueTop: MsoPresetCameraToString = "msoCameraObliqueTop"
+        Case msoCameraObliqueTopRight: MsoPresetCameraToString = "msoCameraObliqueTopRight"
+        Case msoCameraObliqueLeft: MsoPresetCameraToString = "msoCameraObliqueLeft"
+        Case msoCameraObliqueRight: MsoPresetCameraToString = "msoCameraObliqueRight"
+        Case msoCameraObliqueBottomLeft: MsoPresetCameraToString = "msoCameraObliqueBottomLeft"
+        Case msoCameraObliqueBottom: MsoPresetCameraToString = "msoCameraObliqueBottom"
+        Case msoCameraObliqueBottomRight: MsoPresetCameraToString = "msoCameraObliqueBottomRight"
+        Case msoCameraPerspectiveFront: MsoPresetCameraToString = "msoCameraPerspectiveFront"
+        Case msoCameraPerspectiveLeft: MsoPresetCameraToString = "msoCameraPerspectiveLeft"
+        Case msoCameraPerspectiveRight: MsoPresetCameraToString = "msoCameraPerspectiveRight"
+        Case msoCameraPerspectiveAbove: MsoPresetCameraToString = "msoCameraPerspectiveAbove"
+        Case msoCameraPerspectiveBelow: MsoPresetCameraToString = "msoCameraPerspectiveBelow"
+        Case msoCameraPerspectiveAboveLeftFacing: MsoPresetCameraToString = "msoCameraPerspectiveAboveLeftFacing"
+        Case msoCameraPerspectiveAboveRightFacing: MsoPresetCameraToString = "msoCameraPerspectiveAboveRightFacing"
+        Case msoCameraPerspectiveContrastingLeftFacing: MsoPresetCameraToString = "msoCameraPerspectiveContrastingLeftFacing"
+        Case msoCameraPerspectiveContrastingRightFacing: MsoPresetCameraToString = "msoCameraPerspectiveContrastingRightFacing"
+        Case msoCameraPerspectiveHeroicLeftFacing: MsoPresetCameraToString = "msoCameraPerspectiveHeroicLeftFacing"
+        Case msoCameraPerspectiveHeroicRightFacing: MsoPresetCameraToString = "msoCameraPerspectiveHeroicRightFacing"
+        Case msoCameraPerspectiveHeroicExtremeLeftFacing: MsoPresetCameraToString = "msoCameraPerspectiveHeroicExtremeLeftFacing"
+        Case msoCameraPerspectiveHeroicExtremeRightFacing: MsoPresetCameraToString = "msoCameraPerspectiveHeroicExtremeRightFacing"
+        Case msoCameraPerspectiveRelaxed: MsoPresetCameraToString = "msoCameraPerspectiveRelaxed"
+        Case msoCameraPerspectiveRelaxedModerately: MsoPresetCameraToString = "msoCameraPerspectiveRelaxedModerately"
+        Case msoPresetCameraMixed: MsoPresetCameraToString = "msoPresetCameraMixed"
+    End Select
+End Function

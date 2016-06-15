@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <string>C:\Windows\assembly\GAC_MSIL\Office\14.0.0.0__71e9bce111e9429c\Office.dll</string>
+  <string>C:\Windows\assembly\GAC_MSIL\Microsoft.Office.Interop.Outlook\14.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Outlook.dll</string>
+  <string>C:\Windows\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\14.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll</string>
+  <string>C:\Windows\assembly\GAC_MSIL\Microsoft.Office.Interop.PowerPoint\14.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.PowerPoint.dll</string>
+  <string>C:\Windows\assembly\GAC_MSIL\Microsoft.Office.Interop.Publisher\14.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Publisher.dll</string>
+  <string>C:\Windows\assembly\GAC_MSIL\Microsoft.Office.Interop.Word\14.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Word.dll</string>
+</ArrayOfString>
